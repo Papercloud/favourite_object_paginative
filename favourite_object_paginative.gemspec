@@ -7,11 +7,11 @@ require "favourite_object_paginative/version"
 Gem::Specification.new do |s|
   s.name        = "favourite_object_paginative"
   s.version     = FavouriteObjectPaginative::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of FavouriteObjectPaginative."
-  s.description = "TODO: Description of FavouriteObjectPaginative."
+  s.authors     = ["William Porter"]
+  s.email       = ["wp@papercloud.com"]
+  s.homepage    = "http://wporter.com"
+  s.summary     = "Adds Paginative to FavouriteObject"
+  s.description = "Overrides the original pagination with the paginative gem"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
