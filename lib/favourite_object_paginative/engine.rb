@@ -1,3 +1,6 @@
+require 'favourite_object'
+require 'paginative'
+
 module FavouriteObjectPaginative
   class Engine < ::Rails::Engine
   	config.generators do |g|
