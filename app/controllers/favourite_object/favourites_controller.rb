@@ -16,6 +16,7 @@ class FavouriteObject::FavouritesController < FavouriteObject::BaseFavouritesCon
 		  format.html
 		  format.json {render :json => @favourites, 
 		  	meta: { 
+		  		deleted_ids: FavouriteObject::Favourite.show_deleted_ids(params[:visible_ids]),
 		  		pagination: { total_objects: @total_count} 
 		  	}
 		  }
