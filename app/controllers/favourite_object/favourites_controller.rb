@@ -4,8 +4,8 @@ class FavouriteObject::FavouritesController < FavouriteObject::BaseFavouritesCon
 		limit_per_page = params[:per_page] || 25
 		@total_count = @favourites.count
 
-		if params[:from]
-		  @favourites = @favourites.with_field_from(params[:from][:field], params[:from][:value])
+		if params[:from] && !params[:from][:value].blank?
+		  @favourites = @favourites.with_field_from(params[:from][:field], params[:from][:value], limit_per_page, params[:from][:order])
 		else
 		  @favourites = @favourites.limit(limit_per_page)
 		end
