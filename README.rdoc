@@ -1,3 +1,8 @@
 = FavouriteObjectPaginative
 
-This project rocks and uses MIT-LICENSE.
+At the moment requires this to be added to your favourite_object.rb initializer 
+```
+FavouriteObject::Favourite.class_eval do
+  include Paginative::ModelExtension
+end
+```
