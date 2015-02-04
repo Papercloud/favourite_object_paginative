@@ -9,5 +9,9 @@ module FavouriteObjectPaginative
   	  g.assets false
   	  g.helper false
   	end
+
+    initializer "favourite_object_paginative.override" do
+      FavouriteObjectPaginative.override
+    end
   end
 end

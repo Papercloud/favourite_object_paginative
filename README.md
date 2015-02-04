@@ -1,9 +1,8 @@
 = FavouriteObjectPaginative
 
-At the moment requires this to be added to your favourite_object.rb initializer
+- Adds Paginative support to FavouriteObject
 
+Install: 
 ```
-FavouriteObject::Favourite.class_eval do
-  include Paginative::ModelExtension
-end
+gem 'favourite_object_paginative'
 ```
